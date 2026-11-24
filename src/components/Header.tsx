@@ -83,7 +83,7 @@ export function Header() {
         <Link to="/" className="brand" aria-label="MGV Dubbing — на главную"><Logo /></Link>
         <nav className="topnav" aria-label="Основная навигация">
           <NavLink to="/" end>Главная</NavLink>
-          <a href="/#catalog">Каталог</a>
+          <a href={`${import.meta.env.BASE_URL}#catalog`}>Каталог</a>
           <NavLink to="/shop">Подписка</NavLink>
           <NavLink to="/purchases">Мои покупки</NavLink>
         </nav>
@@ -92,7 +92,7 @@ export function Header() {
 
       <nav className="bottomnav" aria-label="Мобильная навигация">
         <NavLink to="/" end><House size={22} /><span className="bn-label">Главная</span></NavLink>
-        <a href="/#catalog"><LayoutGrid size={22} /><span className="bn-label">Каталог</span></a>
+        <a href={`${import.meta.env.BASE_URL}#catalog`}><LayoutGrid size={22} /><span className="bn-label">Каталог</span></a>
         <NavLink to="/shop"><Sparkles size={22} /><span className="bn-label">Подписка</span></NavLink>
         <NavLink to="/purchases"><ShoppingBag size={22} /><span className="bn-label">Покупки</span></NavLink>
         <ProfileMenu compact />

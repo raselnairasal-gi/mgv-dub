@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "steam": "node scripts/fetch-steam.mjs"
   },
   "dependencies": {
     "hls.js": "^1.5.17",
