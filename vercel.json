@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/steam-api/:path*", "destination": "https://store.steampowered.com/api/:path*" },
+    { "source": "/((?!assets/|steam-api/).*)", "destination": "/index.html" }
+  ]
+}
